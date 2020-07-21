@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+html,
+body {
+  font-family: "Open Sans";
+  margin: 0;
+  height: 100%;
+}
+#wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 4fr 1fr;
+  grid-template-areas:
+    "navlogo . nav"
+    "search search search";
+}
+
+a {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  color: rgba(32, 32, 32, 0.9);
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: gray underline;
+}
+
+#search {
+  grid-area: search;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15.5vh;
+  width: 40%;
+}
+#search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  margin: auto;
+  border: 0.7px solid rgba(167, 166, 166, 0.3);
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+#search-bar:hover {
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0.2px 5px rgba(32, 32, 32, 0.3);
+}
+#lg {
+  opacity: 45%;
+  margin-left: 12px;
+}
+#lg svg {
+  width: 20px;
+  height: 20px;
+}
+
+#search-box {
+  font: inherit;
+  margin-left: 20px;
+  margin-right: 25px;
+  border: none;
+  width: 100%;
+  height: 30px;
+}
+#search-box:focus,
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgba(167, 166, 166, 0.3);
+}
+
+#nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#footer {
+  grid-area: footer;
+}
+.btn {
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: rgb(112, 111, 111);
+  margin-right: 10px;
+  font: inherit;
+  font-size: 15px;
+}
+
+.btn[name~="btnI"] {
+  margin-right: 0px;
+}
+
+ul {
+  display: inline-flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo-container {
+  height: 92px;
+  margin-bottom: 20px;
+}
+
+#nav .items {
+  margin-right: 20px;
+}
+
+.logo-text {
+  color: rgb(71, 129, 255);
+  position: relative;
+  bottom: 27px;
+  left: 103px;
+}
+
+#img-srch {
+  height: 25px;
+  width: 25px;
+  padding-right: 20px;
+}
+#img-srch svg {
+  fill: rgb(71, 129, 255);
+  height: 25px;
+  width: 25px;
+}
+
+#isubmit {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#img-srch:hover svg {
+  cursor: pointer;
+  fill: rgb(18, 92, 253);
+}

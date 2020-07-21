@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Google Advanced Search</title>
+    <link rel="icon" type="image/png" href="tb.png" />
+    <link rel="stylesheet" href="advstyles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="navlogo">
+        <img src="googlelogo.png" alt="google logo" />
+      </div>
+      <div id="nav">
+        <div class="items">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="img_search.html">Images</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hr">
+        Advanced Search
+      </div>
+      <div class="line"></div>
+      <div id="search">
+        <div class="t-heading">
+          Find pages with..
+        </div>
+        <form action="https://www.google.com/search">
+          <div class="t-c"><label>all these words:</label></div>
+          <div class="i-c"><input type="text" name="as_q" autofocus /></div>
+          <div class="t-c"><label>this exact word or phrase:</label></div>
+          <div class="i-c"><input type="text" name="as_epq" /></div>
+          <div class="t-c"><label>any of these words:</label></div>
+          <div class="i-c"><input type="text" name="as_oq" /></div>
+          <div class="t-c"><label>none of these words:</label></div>
+          <div class="i-c"><input type="text" name="as_eq" /></div>
+          <div class="t-c"><label>numbers ranging from:</label></div>
+          <div class="i-num-container i-c" style="border: none;">
+            <div class="i-num"><input type="text" name="as_nlo" /></div>
+            <div style="width: 10%; text-align: center;">to</div>
+            <div class="i-num"><input type="text" name="as_nhi" /></div>
+          </div>
+          <div class="spn">
+            <input type="submit" class="btn" value="Advanced Search" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
